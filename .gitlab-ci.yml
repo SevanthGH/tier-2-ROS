@@ -1,0 +1,40 @@
+image: 141.69.58.19:5000/iki/ros-kinetic-amr:latest
+
+stages:
+    - run code without error
+    - test code
+    - test tests
+
+run code:
+    stage: run code without error
+    script:
+    - echo "Running code..."
+    - python tier2_main.py
+
+test basic:
+    stage: test code
+    script:
+    - echo "Running tests..."
+    - python -m pytest tests/tier2_test_basic.py
+
+test laser:
+    stage: test code
+    script:
+    - echo "Running tests..."
+    - python -m pytest tests/tier2_test_laser.py
+
+test laser oo:
+    stage: test code
+    script:
+    - echo "Running tests..."
+    - python -m pytest -v -s tests/tier2_test_laser_oo.py
+
+test mytest present:
+    stage: test tests
+    script:
+    - cat tests/tier2_mytest.py
+
+test mytest success:
+    stage: test tests
+    script:
+    - python -m pytest tests/tier2_mytest.py
