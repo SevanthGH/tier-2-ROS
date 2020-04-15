@@ -4,7 +4,6 @@ from __future__ import print_function
 import ast
 import math
 import time
-import numpy as np
 
 class LaserModel(object):
 
