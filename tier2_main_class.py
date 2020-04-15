@@ -64,10 +64,10 @@ class LaserModel(object):
     TODO: port your code from previous exercise
     '''
     def calc_angle_of_closest_point(self):
-        self.angle_min_dist = 0
-        self.a = (self.index_min_dist*self.angle_inc)
-        self.angle_min_dist = self.angle_min + self.a
-        return self.angle_min_dist
+        #self.angle_min_dist = 0
+        #self.a = (self.scan_data.index(self.m)*self.angle_inc)
+        #self.angle_min_dist = self.angle_min + (self.scan_data.index(self.m)*self.angle_inc)
+        return self.angle_min + (self.scan_data.index(self.m)*self.angle_inc)
 
     '''
     core method for your function calls etc
