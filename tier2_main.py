@@ -18,14 +18,17 @@ def get_length(scan_data):
 TODO: find the index of the closest point in the scan_data
 '''
 def get_index_of_closest_point(scan_data):
-	return 0
+        m = min(i for i in scan_data if i > 0)
+        index_min_dist = scan_data.index(m)
+	return index_min_dist
 
 
 '''
 TODO: calculate the angle in rad for the closest point in scan_data
 '''
 def get_angle_of_closest_point(scan_data):
-	return 0
+        angle_min_dist = angle_min+get_index_of_closest_point(scan_data)*angle_incr
+	return angle_min_dist
 
 
 def get_laserdata(path):
