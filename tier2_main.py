@@ -12,7 +12,7 @@ angle_incr = 0.0314159281552
 TODO: this is simple just return the length of a given list.
 '''
 def get_length(scan_data):
-	return 0
+	return len(scan_data)
 
 '''
 TODO: find the index of the closest point in the scan_data
