@@ -45,7 +45,7 @@ if __name__ == "__main__":
 	Python exercise
 	####################
 	'''
-	print 20*"#"+"\nPython exercise\n"+20*"#"
+	print(20*"#"+"\nPython exercise\n"+20*"#")
 
 	#read raw laser data
 	scan_data = get_laserdata("laser-testdata/laser-testdata_1")
