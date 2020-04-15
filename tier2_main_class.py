@@ -11,8 +11,8 @@ class LaserModel(object):
     def __init__(self, angle_min, angle_max, range_min, range_max):
 
         #here the basic settings of your laser are defined
-        self.angle_min = -1.57079637051
-        self.angle_max = 1.53938043118
+        self.angle_min = angle_min
+        self.angle_max = angle_max
         self.range_min = range_min
         self.range_max = range_max
         self.angle_inc = 0
@@ -63,7 +63,7 @@ class LaserModel(object):
     TODO: port your code from previous exercise
     '''
     def calc_angle_of_closest_point(self):
-        self.angle_min_dist = self.angle_min+self.index_min_dist*self.angle_inc
+        self.angle_min_dist = self.angle_min+(self.index_min_dist*self.angle_inc)
         return self.angle_min_dist
 
     '''
