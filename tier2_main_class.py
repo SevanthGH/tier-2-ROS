@@ -65,7 +65,8 @@ class LaserModel(object):
     '''
     def calc_angle_of_closest_point(self):
         self.angle_min_dist = 0
-        self.angle_min_dist = self.angle_min+(self.index_min_dist*self.angle_inc)
+        a = (self.index_min_dist*self.angle_inc)
+        self.angle_min_dist = self.angle_min + a
         return self.angle_min_dist
 
     '''
