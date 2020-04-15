@@ -56,9 +56,9 @@ class LaserModel(object):
     def calc_index_of_closest_point(self):
         self.m = 0
         self.m = min(i for i in self.scan_data if i > 0)
-        self.index_min_dist = 0	
-        self.index_min_dist = self.scan_data.index(self.m)
-        return self.index_min_dist
+        #self.index_min_dist = 0	
+        #self.index_min_dist = self.scan_data.index(self.m)
+        return self.scan_data.index(self.m)
 
     '''
     TODO: port your code from previous exercise
