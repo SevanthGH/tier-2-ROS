@@ -48,7 +48,7 @@ class LaserModel(object):
     TODO: calculate the angle increment
     '''
     def calc_angle_inc(self):
-        self.angle_inc = (self.angle_max-(self.angle_min))/(len(self.scan_data)-1)
+        self.angle_inc = (self.angle_max-(self.angle_min))/(self.get_scan_length()-1)
         return self.angle_inc
     '''
     TODO: port your code from previous exercise
